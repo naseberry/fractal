@@ -9,22 +9,33 @@ const fixtures = require('./fixtures');
 
 describe('Parsing Fixtures', function() {
 
-    const adapter = createAdapter('simple');
-    const fixtureNames = fixtures.getBaseNames('simple');
+    const fixtureTypes = ['simple'];//fixtures.getTypes();
 
-    before(adapter.load);
+    fixtureTypes.forEach(type => {
 
-    fixtureNames.forEach(name => {
+        describe(type, function() {
 
-        it(`outputs expected values for the '${name}' component`, function() {
+            const adapter = createAdapter(type);
+            const fixtureNames = fixtures.getBaseNames(type);
 
-            const expectedOutput = adapter.getExpectedOutput(name);
-            const actualOutput = adapter.getActualOutput(name);
+            before(adapter.load);
 
-            expect(expectedOutput).to.deep.equal(actualOutput);
+            fixtureNames.forEach(name => {
+
+                it(`outputs expected values for the '${name}' component`, function() {
+
+                    const expectedOutput = adapter.getExpectedOutput(name);
+                    const actualOutput = adapter.getActualOutput(name);
+
+                    console.log('a', actualOutput);
+                    console.log('e', expectedOutput);
+
+                    expect(actualOutput).to.deep.equal(expectedOutput);
+                });
+            })
+
         });
-    })
 
-
+    });
 
 });
