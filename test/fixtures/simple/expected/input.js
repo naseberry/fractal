@@ -17,7 +17,6 @@ module.exports = {
     tags: [ undefined ],
     isCollated: false,
     preview: null,
-    display: {},
     viewPath: path.join(__dirname, '../components/input/input.hbs'),
     resources: { assets: [] },
 };

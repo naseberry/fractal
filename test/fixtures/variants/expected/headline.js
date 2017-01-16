@@ -11,7 +11,7 @@ module.exports = {
     baseHandle: 'headline',
     viewPath: path.join(__dirname, '../components/headline/headline.hbs'),
     variants: {
-        name: 'GGeadline-variants',
+        name: 'headline-variants',
         handle: 'headline-variants',
         label: 'Headline Variants',
         title: 'Headline Variants',
@@ -29,18 +29,14 @@ module.exports = {
             isEntity: true,
             isVariant: true,
             baseHandle: 'headline',
-            
             status: {
                 label: 'Ready',
                 description: 'Ready to implement.',
                 color: '#29CC29'
             },
-            
             isDefault: true,
             viewPath: path.join(__dirname,'../components/headline/headline.hbs'),
-            
             context: { variant: 'main', tag: 'h1', text: 'Headline text' },
-            
             content: '<{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}} class="Headline Headline--{{variant}}">{{ text }}</{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}}>\n'
         }, {
             name: 'hero',
@@ -53,18 +49,14 @@ module.exports = {
             isEntity: true,
             isVariant: true,
             baseHandle: 'headline',
-            
             status: {
                 label: 'Ready',
                 description: 'Ready to implement.',
                 color: '#29CC29'
             },
-            
             isDefault: false,
             viewPath: path.join(__dirname,'../components/headline/headline.hbs'),
-            
             context: { variant: 'hero', tag: 'h1', text: 'Headline text' },
-            
             content: '<{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}} class="Headline Headline--{{variant}}">{{ text }}</{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}}>\n'
         }, {
             name: 'body',
@@ -77,18 +69,14 @@ module.exports = {
             isEntity: true,
             isVariant: true,
             baseHandle: 'headline',
-            
             status: {
                 label: 'Ready',
                 description: 'Ready to implement.',
                 color: '#29CC29'
             },
-            
             isDefault: false,
             viewPath: path.join(__dirname,'../components/headline/headline.hbs'),
-            
             context: { variant: 'body', tag: 'h2', text: 'Headline text' },
-            
             content: '<{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}} class="Headline Headline--{{variant}}">{{ text }}</{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}}>\n'
         }, {
             name: 'block',
@@ -101,18 +89,14 @@ module.exports = {
             isEntity: true,
             isVariant: true,
             baseHandle: 'headline',
-            
             status: {
                 label: 'Ready',
                 description: 'Ready to implement.',
                 color: '#29CC29'
             },
-            
             isDefault: false,
             viewPath: path.join(__dirname,'../components/headline/headline.hbs'),
-            
             context: { variant: 'block', tag: 'h2', text: 'Headline text' },
-            
             content: '<{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}} class="Headline Headline--{{variant}}">{{ text }}</{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}}>\n'
         }, {
             name: 'tertiary',
@@ -125,18 +109,14 @@ module.exports = {
             isEntity: true,
             isVariant: true,
             baseHandle: 'headline',
-            
             status: {
                 label: 'Ready',
                 description: 'Ready to implement.',
                 color: '#29CC29'
             },
-            
             isDefault: false,
             viewPath: path.join(__dirname,'../components/headline/headline.hbs'),
-            
             context: { variant: 'tertiary', tag: 'h3', text: 'Headline text' },
-            
             content: '<{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}} class="Headline Headline--{{variant}}">{{ text }}</{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}}>\n'
         }, {
             name: 'supporting',
@@ -150,18 +130,14 @@ module.exports = {
 : true,
             isVariant: true,
             baseHandle: 'headline',
-            
             status: {
                 label: 'Ready',
                 description: 'Ready to implement.',
                 color: '#29CC29'
             },
-            
             isDefault: false,
             viewPath: path.join(__dirname,'../components/headline/headline.hbs'),
-            
             context: { variant: 'supporting', tag: 'h4', text: 'Headline text' },
-            
             content: '<{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}} class="Headline Headline--{{variant}}">{{ text }}</{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}}>\n'
         }, {
             name: 'smallquote',
@@ -174,18 +150,14 @@ module.exports = {
             isEntity: true,
             isVariant: true,
             baseHandle: 'headline',
-            
             status: {
                 label: 'Ready',
                 description: 'Ready to implement.',
                 color: '#29CC29'
             },
-            
             isDefault: false,
             viewPath: path.join(__dirname,'../components/headline/headline.hbs'),
-            
             context: { variant: 'smallQuote', tag: 'h4', text: 'Headline text' },
-            
             content: '<{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}} class="Headline Headline--{{variant}}">{{ text }}</{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}}>\n'
         }, {
             name: 'sub',
@@ -198,18 +170,14 @@ module.exports = {
             isEntity: true,
             isVariant: true,
             baseHandle: 'headline',
-            
             status: {
                 label: 'Ready',
                 description: 'Ready to implement.',
                 color: '#29CC29'
             },
-            
             isDefault: false,
             viewPath: path.join(__dirname,'../components/headline/headline.hbs'),
-            
             context: { variant: 'sub', tag: 'h4', text: 'Headline text' },
-            
             content: '<{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}} class="Headline Headline--{{variant}}">{{ text }}</{{#if tag}}{{tag}}{{/if}}{{#unless tag}}h1{{/unless}}>\n'
         }]
     }

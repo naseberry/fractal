@@ -12,13 +12,13 @@ function getBaseNames(type) {
 }
 
 function getTypes() {
-	return fs.readdirSync(__dirname).filter(function(file) {
-    return fs.statSync(path.join(__dirname, file)).isDirectory();
-  });
+    return fs.readdirSync(__dirname).filter(function(file) {
+        return fs.statSync(path.join(__dirname, file)).isDirectory();
+    });
 }
 
 module.exports = {
     getFiles,
     getTypes,
     getBaseNames
-}
+};
